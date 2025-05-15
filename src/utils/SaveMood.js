@@ -27,7 +27,6 @@ function saveMood(moodInput) {
 
     const today = new Date().toDateString();
 
-    // Retrieve mood array
     let moodArray = localStorage.getItem('moodArray');
     if (moodArray === null) {
       moodArray = [];
