@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #515b69;
+}
+
+
+.d-flex.flex-column {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.mainContainer {
+  background-color: #30304b; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  padding: 2rem;
+  max-width: 600px; 
+  width: 100%; 
+  text-align: center; 
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #d7d2d2;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+p strong {
+  color: #f4f1f1;
+}
+
+.d-flex.justify-content-center.gap-2 {
+  margin: 1.5rem 0;
+}
+
+
+
+.emojiButton {
+  background-color: #e9ecef; 
+  border: none;
+  border-radius: 50%; 
+  width: 60px; 
+  height: 60px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s; /* Smooth hover effects */
+}
+.inline-emoji {
+  background-color: #e9ecef; 
+  border: none;
+  border-radius: 50%;  
+}
+
+.emojiButton:hover {
+  background-color: #d1d5db; 
+  transform: scale(1.1); 
+}
+
+.emojiButton.selected {
+  background-color: #4dabf7; 
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); 
+}
+
+.emojiSettings {
+  width: 40px; 
+  height: 40px;
+  object-fit: contain; 
+}
+
+#submitTodayMood {
+  background-color: #2ca2d4; 
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+#submitTodayMood:hover {
+  background-color: #228be6; 
+}
+
+#lastSevenDaysMood,
+#geminiMessage {
+  color: #ebe5e5;
+  font-style: italic;
+}
+
+@media (max-width: 576px) {
+  .mainContainer {
+    padding: 1.5rem; 
+    max-width: 90%;
+  }
+
+  .emojiButton {
+    width: 50px; 
+    height: 50px;
+  }
+
+  .emojiSettings {
+    width: 32px;
+    height: 32px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
